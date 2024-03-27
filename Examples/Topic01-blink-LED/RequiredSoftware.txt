@@ -1,0 +1,23 @@
+
+# Software Required
+
+my github link:  https://github.com/kwinter745321 
+
+* To utilize the **Thonny** application.  You can obtain it here: https://thonny.org/
+* You might need a USB driver.  
+
+To connect to your board,'click' on the MicroPython (generic) "Virtual Comm Port" found on the lower right of the Thonny bottom-most status bar.
+
+# STM32 Tools
+
+Free to download and use after you register.
+
+STM32CubeProgrammer 
+https://www.st.com/en/development-tools/stm32cubeprog.html
+
+STM32CubeIDE (Not needed but nice to have as you get the IOC a graphical represenation of the MCU )
+
+
+## References
+
+MicroPython docs 'latest' September 07, 2023: https://docs.micropython.org/en/latest/
