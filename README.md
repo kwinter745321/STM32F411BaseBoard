@@ -9,12 +9,11 @@
 
 ## Scope.
 
-Jump start your project with the <B>STM32F411 Base Board</B>.  The board provides a patch-wire friendly (flexible) base for the low-cost 
-WeAct Studios' BlackPill v3.1 USB Stick board. The BlackPill is not included, however this low-cost board is available from popular retailers.  
-The board includes common user interface devices and ports for external devices.  
-The board is compatible with popular Integrated Development Environments (IDE).  The board is well suited to creating projects in MicroPython.
+Jump start your project with the <B>STM32F411 Base Board</B>.  The board provides a patch-wire friendly (flexible) base for the low-cost WeAct Studios' BlackPill v3.1 USB Stick board. The BlackPill is not included, however this low-cost board is available from popular retailers.  The board includes common user interface devices and ports for external devices.  
 
 ![](Board_image.jpg)
+
+The board is compatible with popular Integrated Development Environments (IDE).  The board is well suited to creating projects in MicroPython.
 
 ## Acquiring the STM32F411 Base Board
 
