@@ -17,7 +17,7 @@ The board is compatible with popular Integrated Development Environments (IDE). 
 
 ## Acquiring the STM32F411 Base Board
 
-Add here.
+[Please visit my store at Tindie](https://www.tindie.com/products/aiy745321/stm32f411-base-board/)
 
 ## Acquiring the STM32F411 *BlackPill) from WeAct Studios.
 
