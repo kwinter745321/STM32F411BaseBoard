@@ -8,7 +8,6 @@
 * MicroPython 1.20
 
 ## Scope.
-
 Jump start your project with the <B>STM32F411 Base Board</B>.  The board provides a patch-wire friendly (flexible) base for the low-cost WeAct Studios' BlackPill v3.1 USB Stick board. The BlackPill is not included, however this low-cost board is available from popular retailers.  The board includes common user interface devices and ports for external devices.  
 
 This GitHub site includes simple MicroPython examples.
@@ -18,19 +17,17 @@ This GitHub site includes simple MicroPython examples.
 The board is compatible with popular Integrated Development Environments (IDE).  The board is well suited to creating projects in MicroPython.
 
 ## Acquiring the STM32F411 Base Board.
+To learn more, [click this link](https://www.tindie.com/products/aiy745321/stm32f411-base-board/) to visit the <B>Applying Microcontroller Solutions</B> store at Tindie.
 
-[Please visit my store at Tindie](https://www.tindie.com/products/aiy745321/stm32f411-base-board/)
-
-## Acquiring the STM32F411 *BlackPill) from WeAct Studios.
-
+## Acquiring the <B>BlackPill</B> (STM32F411) from WeAct Studios.
 [Link to GitHub web site](https://GitHub.com/WeActStudio/WeActStudio.MiniSTM32F4x1)
 
-1. Make sure you are getting BlackPill v3.1.
+1. Make sure you are getting BlackPill (STM32F411) v3.1.
 2. You should get the optional 8 MB or 16 MB Flash chip pre-soldered to the bottom of the board.
 3. Some retailers will sell the BlackPill board with the headers pre-soldered.
 4. Also, from your favorite retailer, I suggest you acquire a "ST LINK-V2" dongle.
 
-A copy of my built firmware (with MicroPython) resides on the GitHub site. [Link](https://GitHub.com/kwinter745321/STM32F411BaseBoard/tree/main/Firmware).  You can download it and skip down to the "Flashing" section below.
+A copy of MicoPython firmware (version 1.20) resides on the GitHub site. [Link](https://GitHub.com/kwinter745321/STM32F411BaseBoard/tree/main/Firmware).  You can download it and skip down to the "Flashing" section below.
 
 ## Building the latest MicroPython for the BlackPill.
 
@@ -89,7 +86,6 @@ make BOARD=WeAct_F411CE -j
 ```
 
 ## Flashing MicroPython firmware to a BlackPill.
-
 You should register at the ST Microelectronics site and get their STM32Cube Programmer software (its free to registered users).
 
 There are several ways to flash the BlackPill.
