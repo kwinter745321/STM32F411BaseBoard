@@ -31,7 +31,9 @@ Follow these Steps:
 4) Click the Red STOP icon in the toolbar.
 5) Click the Green Run icon in the tool bar
 
-The application wil display a few information messages and then wait.
+[Link to example code](./bb_pyb_button_pb10.py)
+
+The application will display a few information messages and then wait.
 Each time you press the user button, the program will turn on the led,
 pause and then turn off the led. Press a button again to light the led.
 

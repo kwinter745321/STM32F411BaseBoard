@@ -74,7 +74,7 @@ oled.text("hello")
 
 > The oled text does not display until you invoke the show() function.
 
-[Link to an example](/bb_small_096_oled_pyb_i2c1.py)
+[Link to an example](./bb_small_096_oled_pyb_i2c1.py)
 
 
 

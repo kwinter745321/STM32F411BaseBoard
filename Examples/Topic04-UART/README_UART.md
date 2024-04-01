@@ -52,7 +52,7 @@ uart.write("hello")
 On my BlackPill it was necessary to have the uart() command followed by the uart.init().  The write statement is all that is needed.
 
 
-[Link to an example](/bb_pyb_uart1_send.py)
+[Link to an example](./bb_pyb_uart1_send.py)
 
 
 
