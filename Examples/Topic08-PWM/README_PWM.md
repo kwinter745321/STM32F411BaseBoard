@@ -30,7 +30,7 @@ Follow these Steps:
 6) Click the Red STOP icon in the toolbar.
 7) Click the Green Run icon in the tool bar
 
-[Link to an example](/bb_pyb_timer-pwm_b3.py)
+[Link to an example](\bb_pyb_timer-pwm_b3.py)
 You should see information messages.  When you press the button the PWM duty is changed by increments of 20% and the LED glows brighter:
 
 Quick Look:
@@ -49,7 +49,7 @@ ch2.pulse_width_percent(0)
 ```
 
 Please look at the pink box next to the PB3 pin on the BlackPill diagram. 
-[Link to BlackPill pin layout](images\STM32F4x1_PinoutDiagram_RichardBalint.png)
+[Link to BlackPill pin layout](images/STM32F4x1_PinoutDiagram_RichardBalint.png)
 
 The pink box has "T2_CH2".
 This means pin PB3 is associated with Channel 2 of Timer 2.  We define these objects in the code.
