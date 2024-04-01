@@ -58,7 +58,7 @@ reading = pot.read()
 value = (reading * 3.3) / 4095
 ```
 
-[Link to (pyb) ADC example](./pyb_analog_pa1.py)
+[Link to example](./bb_pyb_analog_pa1.py)
 
 ## Conclusion.
 The potentiomenters are devices that utilize Analog Input. The base board makes it easy to incorporate common user devices into your projects.

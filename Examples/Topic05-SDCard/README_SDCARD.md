@@ -68,7 +68,7 @@ print(os.listdir('/'))
 
 This exacmple performs a read.  Follow the MicroPython web site's exaplanation on how to read/write to files.
 
-[Link to example](./bb_pyb_uart1_send.py)
+[Link to example](./bb_pyb_test_sdcard.py)
 
 
 
