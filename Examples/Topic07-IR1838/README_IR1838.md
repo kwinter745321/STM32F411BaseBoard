@@ -100,7 +100,7 @@ Repeat code.
 ```
 
 
-[Link to an example](./bb_test_ir1838.py)
+[Link to example](./bb_test_ir1838.py)
 
 Ideally there are two devices each using its own UART to communicate with the other.
 For example, one can setup two BlackPills to communicate with each other.
