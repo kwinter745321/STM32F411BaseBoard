@@ -17,7 +17,7 @@ UART_RX = 'PA10'
 
 # (1) Wire a connection between B10 and a button.
 
-# (2) Go to the UART1-BT POrt
+# (2) Go to the UART1-BT Port
 # Connect a wire from the TXD socket to the RXD sockets.
 
 user = Pin(USER_BUTTON_PIN, Pin.IN, Pin.PULL_UP)

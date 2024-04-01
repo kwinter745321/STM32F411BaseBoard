@@ -9,7 +9,7 @@ import time
 
 # connect a wire between A1 and one of the potentiometers.
 pot_pin = 'PA1'
-# Connect a wire between B19 and a button.
+# Connect a wire between B10 and a button.
 USER_BUTTON_PIN = 'PB10'
 
 pot = ADC(pot_pin)

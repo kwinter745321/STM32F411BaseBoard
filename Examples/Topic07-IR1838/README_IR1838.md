@@ -1,4 +1,4 @@
-## README_UART.md
+## README_IR1838.md
 # Communicate with IR1838
 
 * Platform: STM32
