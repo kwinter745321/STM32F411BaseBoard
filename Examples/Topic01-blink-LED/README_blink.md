@@ -46,7 +46,7 @@ time.sleep(1)
 led.off()
 ```
 
-[Link to example code](/bb_pyb_led_pb0.py)
+[Link to example code](./bb_pyb_led_pb0.py)
 
 ## Conclusion.
 The base board makes it easy to incorporate common user devices like buttons and indicators into your projects.

@@ -30,7 +30,7 @@ Follow these Steps:
 6) Click the Red STOP icon in the toolbar.
 7) Click the Green Run icon in the tool bar
 
-[Link to an example](\bb_pyb_timer-pwm_b3.py)
+[Link to an example](/bb_pyb_timer-pwm_b3.py)
 You should see information messages.  When you press the button the PWM duty is changed by increments of 20% and the LED glows brighter:
 
 Quick Look:
