@@ -14,7 +14,7 @@ This GitHub site includes simple MicroPython examples.
 
 ![](Board_image.jpg)
 
-The board is compatible with popular Integrated Development Environments (IDE).  The board is well suited to creating projects in MicroPython.
+The board is compatible with popular Integrated Development Environments (IDE).  The board is well suited to creating projects in MicroPython. [YouTube Video](https://www.youtube.com/watch?v=VYYiyMalOCI)
 
 ## Acquiring the STM32F411 Base Board.
 To learn more, [click this link](https://www.tindie.com/products/aiy745321/stm32f411-base-board/) to visit the <B>Applying Microcontroller Solutions</B> store at Tindie.
