@@ -44,6 +44,7 @@ led = Pin('PB0', mode=Pin.OUT)
 led.on()
 time.sleep(1)
 led.off()
+time.sleep(1)
 ```
 
 [Link to example code](./bb_pyb_led_pb0.py)
