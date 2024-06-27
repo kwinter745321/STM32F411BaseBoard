@@ -11,25 +11,16 @@ import time
 led = LED(1)
 led.off()
 
-KEY_BTN_PIN = 'PB10'
+key = Pin("PB10", Pin.IN, Pin.PULL_UP)
 
-key = Pin(KEY_BTN_PIN, Pin.IN, Pin.PULL_UP)
-
-try:
-    print("User button defined at {}.".format(key))
-    print("\n")
-    done = False
-    while not done:
-        key_btn = key.value()   # returns one or zero.
-        #print("key_btn:",key_btn)
-        if key_btn == 0:
-            led.on()
-            time.sleep(0.5)
-        led.off()
+print("User button defined at {}.".format(key))
+done = False
+while not done:
+    key_btn = key.value()   # returns one or zero.
+    #print("key_btn:",key_btn)
+    if key_btn == 0:
+        led.on()
         time.sleep(0.5)
-except KeyboardInterrupt:
-    done = True
-    print('Interrupted by Control-c.')
-finally:
     led.off()
-    print('Finished.')
+    time.sleep(0.5)
+

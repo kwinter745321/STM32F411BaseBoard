@@ -4,7 +4,7 @@
 # MIT License
 # MicroPython 1.20
 #
-from pyb import Pin, LED, Switch
+from pyb import LED, Switch
 import time
 
 # Builtin LED on the BlackPill.
