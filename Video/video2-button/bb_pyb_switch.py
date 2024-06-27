@@ -18,7 +18,7 @@ try:
     print("\n")
     done = False
     while not done:
-        key_btn = key.value()   # returns one or zero.
+        key_btn = key.value()   # now, it returns False or True.
         #print("key_btn:",key_btn)
         if key_btn == True:
             led.on()
