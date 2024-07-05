@@ -19,7 +19,7 @@ The OLEDs are hard coded to certain colors: (e.g. always white) But I like the d
 [Amazon 0.96 Blue OLED](https://www.amazon.com/HiLetgo-Serial-128X64-Display-Color/dp/B06XRBYJR8/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.Av2lkLGBWPhH2qBAbn1mSPGKyQ_hVDqN0Om-UmYJrf66AKnS5ghnYLkISDHrowoVn3JVtTT_Uo-hErXM6t9OzJcPG2Qacl_p_UZH-B8G4lkxPxAXDiR8kLyEIffCPGqrLFmfqdZqydjQi-KF8i1q5_vDRzNBVLpCG8OV1FGXFY8Lymoi52qLgiCuzfjJp9IbrraFa7xp8nuWlPK8Ks0Ws3UTBIvT5c_tzrK99PAb4no.4Q8j3JX8r905cfQi57P-mMBIwlXPeo4LZ0CDPdsw_gg&dib_tag=se&keywords=SSD1306&qid=1711466280&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 
 This display is 128 pixels by 64 pixels and uses Blue or Yellow/Blue.  And it states it uses SSD1306 driver.
-The default font uses a 8x8 pixel font.  Therefore you can displa a maximum of 16 characters on a row.  There are upto eight rows.
+The default font uses a 8x8 pixel font.  Therefore you can display a maximum of 16 characters on a row.  There are upto eight rows.
 
 #### BlackPill for STM32F411CEU6.
 
