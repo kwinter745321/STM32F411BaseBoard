@@ -14,15 +14,13 @@ from machine import Pin, freq
 
 # Import all implemented classes
 from ir_rx.nec import NEC_8, NEC_16, SAMSUNG
-#from ir_rx.sony import SONY_12, SONY_15, SONY_20
-#from ir_rx.philips import RC5_IR, RC6_M0
-#from ir_rx.mce import MCE
-
-# Pin used on STM32 must have a pullup to VCC
+from ir_rx.sony import SONY_12, SONY_15, SONY_20
+from ir_rx.philips import RC5_IR, RC6_M0
+from ir_rx.mce import MCE
 
 # Define pin according to platform
 if platform == "pyboard":
-    p = Pin("PB1", Pin.IN, Pin.PULL_UP)
+    p = Pin("PB10", Pin.IN, Pin.PULL_UP)
 elif platform == "esp8266":
     freq(160000000)
     p = Pin(13, Pin.IN)
@@ -40,11 +38,11 @@ def cb(data, addr, ctrl):
 
 
 def test(proto=0):
-    #classes = (NEC_8, NEC_16, SONY_12, SONY_15, SONY_20, RC5_IR, RC6_M0, MCE, SAMSUNG)
-    classes = (NEC_8, NEC_16)
+    classes = (NEC_8, NEC_16, SONY_12, SONY_15, SONY_20, RC5_IR, RC6_M0, MCE, SAMSUNG)
+    #classes = (NEC_8, NEC_16)
     ir = classes[proto](p, cb)  # Instantiate receiver
     #ir.error_function(print_error)  # Show debug information
-    # ir.verbose = True
+    ir.verbose = True
     # A real application would do something here...
     try:
         while True:
@@ -72,5 +70,6 @@ Hit ctrl-c to stop, then ctrl-d to soft reset."""
 
 print(s)
 
+# Modify below command for remote's protocol.
 test()
 
