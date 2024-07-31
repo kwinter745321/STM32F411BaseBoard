@@ -57,9 +57,10 @@ When ready, the function pulse_width_percent() is then set to the desired duty (
 
 ## Conclusion.
 
-(Once you get it to work) the IR1838 can be very useful.  This device requires some
-experimentation on your part to get the components in a working state.  Then you need to 
-find the best way to use the code in your project.
+Using PWM, requires understanding Timers specific to your microcontroller.   Therefore, its necessary
+to study the microcontroller's Datasheet tables (or thankfully in our case the BlackPill schematic)
+before starting your program.  Then you need to thank about the devices involved.  Will they operate
+with a variable voltage.  Then you can proceed to build and code your project.
 
 The base board provides a useful port for this device.
 
