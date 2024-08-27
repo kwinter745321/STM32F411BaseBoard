@@ -1,0 +1,638 @@
+
+35 cm
+
+Budget1 was: 0
+8141 mm
+390 mm
+387 mm
+395 mm
+383 mm
+391 mm
+391 mm
+387 mm
+382 mm
+386 mm
+387 mm
+Budget2 was: 0
+8141 mm
+325 mm
+322 mm
+332 mm
+331 mm
+325 mm
+328 mm
+328 mm
+335 mm
+332 mm
+327 mm
+Budget3 was: 0
+8141 mm
+332 mm
+336 mm
+340 mm
+335 mm
+338 mm
+334 mm
+336 mm
+338 mm
+336 mm
+341 mm
+
+30 cm
+Budget1 was: 0
+8141 mm
+336 mm
+335 mm
+333 mm
+339 mm
+326 mm
+337 mm
+337 mm
+336 mm
+334 mm
+337 mm
+Budget2 was: 0
+8141 mm
+282 mm
+284 mm
+273 mm
+275 mm
+277 mm
+283 mm
+280 mm
+278 mm
+284 mm
+284 mm
+Budget3 was: 0
+8141 mm
+285 mm
+281 mm
+280 mm
+287 mm
+280 mm
+283 mm
+287 mm
+286 mm
+286 mm
+287 mm
+
+25cm
+
+
+Budget1 was: 0
+8141 mm
+282 mm
+282 mm
+284 mm
+286 mm
+285 mm
+284 mm
+281 mm
+288 mm
+285 mm
+285 mm
+Budget2 was: 0
+8141 mm
+232 mm
+229 mm
+234 mm
+229 mm
+231 mm
+229 mm
+231 mm
+226 mm
+229 mm
+229 mm
+Budget3 was: 0
+8141 mm
+236 mm
+238 mm
+236 mm
+235 mm
+232 mm
+236 mm
+231 mm
+240 mm
+237 mm
+234 mm
+
+20 cm
+
+Budget1 was: 0
+8141 mm
+234 mm
+229 mm
+235 mm
+231 mm
+230 mm
+228 mm
+233 mm
+235 mm
+232 mm
+231 mm
+Budget2 was: 0
+8141 mm
+180 mm
+182 mm
+180 mm
+184 mm
+177 mm
+180 mm
+181 mm
+175 mm
+182 mm
+179 mm
+Budget3 was: 0
+8141 mm
+183 mm
+185 mm
+182 mm
+183 mm
+185 mm
+184 mm
+180 mm
+182 mm
+182 mm
+184 mm
+
+15 cm
+
+Budget1 was: 0
+8141 mm
+181 mm
+181 mm
+177 mm
+181 mm
+175 mm
+176 mm
+178 mm
+179 mm
+176 mm
+180 mm
+Budget2 was: 0
+8141 mm
+123 mm
+123 mm
+123 mm
+124 mm
+126 mm
+126 mm
+126 mm
+125 mm
+125 mm
+123 mm
+Budget3 was: 0
+8141 mm
+129 mm
+128 mm
+128 mm
+128 mm
+129 mm
+127 mm
+128 mm
+125 mm
+127 mm
+130 mm
+
+10 CM
+
+Budget1 was: 0
+8141 mm
+126 mm
+126 mm
+124 mm
+125 mm
+126 mm
+124 mm
+125 mm
+125 mm
+124 mm
+125 mm
+Budget2 was: 0
+8141 mm
+70 mm
+71 mm
+69 mm
+70 mm
+70 mm
+70 mm
+72 mm
+74 mm
+69 mm
+71 mm
+Budget3 was: 0
+8141 mm
+74 mm
+79 mm
+74 mm
+79 mm
+77 mm
+75 mm
+76 mm
+74 mm
+78 mm
+77 mm
+
+5 cm
+
+Budget1 was: 0
+8141 mm
+65 mm
+66 mm
+63 mm
+65 mm
+65 mm
+63 mm
+65 mm
+63 mm
+65 mm
+62 mm
+Budget2 was: 0
+8141 mm
+9 mm
+13 mm
+14 mm
+13 mm
+14 mm
+11 mm
+13 mm
+10 mm
+10 mm
+14 mm
+Budget3 was: 0
+8141 mm
+23 mm
+20 mm
+23 mm
+19 mm
+24 mm
+20 mm
+19 mm
+23 mm
+22 mm
+17 mm
+
+2  cm
+
+Budget1 was: 0
+8141 mm
+62 mm
+59 mm
+58 mm
+58 mm
+59 mm
+58 mm
+55 mm
+63 mm
+58 mm
+54 mm
+Budget2 was: 0
+8141 mm
+36 mm
+36 mm
+55 mm
+43 mm
+-15 mm
+-1 mm
+-3 mm
+8 mm
+14 mm
+26 mm
+Budget3 was: 0
+8141 mm
+8 mm
+3 mm
+10 mm
+3 mm
+1 mm
+7 mm
+5 mm
+6 mm
+4 mm
+5 mm
+
+
+retest 35
+
+
+Budget1 was: 0
+8141 mm
+381 mm
+378 mm
+379 mm
+387 mm
+380 mm
+384 mm
+390 mm
+389 mm
+384 mm
+388 mm
+Budget2 was: 0
+8141 mm
+322 mm
+328 mm
+328 mm
+324 mm
+328 mm
+336 mm
+328 mm
+323 mm
+331 mm
+321 mm
+Budget3 was: 0
+8141 mm
+334 mm
+334 mm
+331 mm
+329 mm
+333 mm
+341 mm
+335 mm
+338 mm
+334 mm
+334 mm
+
+30 cm
+
+Budget1 was: 0
+8141 mm
+334 mm
+339 mm
+333 mm
+334 mm
+338 mm
+332 mm
+335 mm
+337 mm
+333 mm
+342 mm
+Budget2 was: 0
+8141 mm
+277 mm
+283 mm
+275 mm
+274 mm
+277 mm
+278 mm
+278 mm
+282 mm
+278 mm
+281 mm
+Budget3 was: 0
+8141 mm
+286 mm
+287 mm
+286 mm
+287 mm
+284 mm
+283 mm
+283 mm
+288 mm
+284 mm
+286 mm
+
+25 cm
+
+Budget1 was: 0
+8141 mm
+287 mm
+285 mm
+286 mm
+281 mm
+281 mm
+283 mm
+286 mm
+286 mm
+286 mm
+285 mm
+Budget2 was: 0
+8141 mm
+227 mm
+225 mm
+225 mm
+228 mm
+225 mm
+227 mm
+224 mm
+227 mm
+224 mm
+226 mm
+Budget3 was: 0
+8141 mm
+231 mm
+233 mm
+232 mm
+234 mm
+235 mm
+233 mm
+235 mm
+232 mm
+231 mm
+232 mm
+
+20 cm
+
+Budget1 was: 0
+8141 mm
+235 mm
+232 mm
+232 mm
+230 mm
+233 mm
+229 mm
+232 mm
+236 mm
+229 mm
+236 mm
+Budget2 was: 0
+8141 mm
+174 mm
+176 mm
+178 mm
+178 mm
+178 mm
+181 mm
+177 mm
+180 mm
+176 mm
+183 mm
+Budget3 was: 0
+8141 mm
+183 mm
+185 mm
+181 mm
+181 mm
+186 mm
+182 mm
+182 mm
+185 mm
+180 mm
+183 mm
+
+15 cm
+
+Budget1 was: 0
+8141 mm
+174 mm
+179 mm
+181 mm
+178 mm
+178 mm
+176 mm
+176 mm
+179 mm
+175 mm
+181 mm
+Budget2 was: 0
+8141 mm
+122 mm
+126 mm
+123 mm
+126 mm
+123 mm
+127 mm
+125 mm
+126 mm
+124 mm
+127 mm
+Budget3 was: 0
+8141 mm
+126 mm
+128 mm
+125 mm
+130 mm
+127 mm
+131 mm
+129 mm
+128 mm
+126 mm
+128 mm
+
+10 cm
+
+Budget1 was: 0
+8141 mm
+128 mm
+125 mm
+126 mm
+125 mm
+128 mm
+127 mm
+127 mm
+127 mm
+124 mm
+127 mm
+Budget2 was: 0
+8141 mm
+69 mm
+70 mm
+69 mm
+66 mm
+68 mm
+71 mm
+70 mm
+66 mm
+72 mm
+65 mm
+Budget3 was: 0
+8141 mm
+78 mm
+75 mm
+78 mm
+75 mm
+79 mm
+76 mm
+75 mm
+77 mm
+73 mm
+78 mm
+
+5cm
+
+Budget1 was: 0
+8141 mm
+69 mm
+71 mm
+69 mm
+72 mm
+70 mm
+71 mm
+72 mm
+71 mm
+71 mm
+71 mm
+Budget2 was: 0
+8141 mm
+14 mm
+13 mm
+16 mm
+21 mm
+14 mm
+18 mm
+19 mm
+14 mm
+15 mm
+16 mm
+Budget3 was: 0
+8141 mm
+24 mm
+25 mm
+25 mm
+25 mm
+27 mm
+24 mm
+23 mm
+28 mm
+25 mm
+27 mm
+
+2 cm
+
+Budget1 was: 0
+8141 mm
+58 mm
+60 mm
+57 mm
+59 mm
+60 mm
+59 mm
+60 mm
+60 mm
+63 mm
+58 mm
+Budget2 was: 0
+8141 mm
+-1 mm
+-6 mm
+2 mm
+0 mm
+1 mm
+0 mm
+1 mm
+1 mm
+-4 mm
+-1 mm
+Budget3 was: 0
+8141 mm
+0 mm
+2 mm
+6 mm
+5 mm
+5 mm
+3 mm
+5 mm
+4 mm
+5 mm
+6 mm
+
+
+
+
+
+
+
+
+
+
+
+
