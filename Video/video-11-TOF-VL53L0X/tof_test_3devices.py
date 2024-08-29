@@ -1,6 +1,10 @@
-# import time
+# tof_test_3devices.py
+# Modified test file for three devices.
+
 from machine import Pin, I2C
 from vl53l0x import VL53L0X
+
+import time
 
 print("setting up i2c")
 I2C_SCL1_PIN = 'PB8'
@@ -12,6 +16,10 @@ I2C_SDA2_PIN = 'PB5'
 I2C_SCL3_PIN = 'PA15'
 I2C_SDA3_PIN = 'PB3'
 I2C_FREQ = 400000
+TIMING = 40000
+DELAY = 0
+PERIOD0 = 18
+PERIOD1 = 14
 
 sda1 = Pin(I2C_SDA1_PIN)   #Pin(0)
 scl1 = Pin(I2C_SCL1_PIN)   #Pin(1)
@@ -80,30 +88,34 @@ else:
 tof1 = VL53L0X(i2c1)
 budget1 = tof1.measurement_timing_budget_us
 print("Budget1 was:", budget1)
-tof1.set_measurement_timing_budget(40000)
-tof1.set_Vcsel_pulse_period(tof1.vcsel_period_type[0], 18)
-tof1.set_Vcsel_pulse_period(tof1.vcsel_period_type[1], 14)
+tof1.set_measurement_timing_budget( TIMING )
+tof1.set_Vcsel_pulse_period(tof1.vcsel_period_type[0], PERIOD0)
+tof1.set_Vcsel_pulse_period(tof1.vcsel_period_type[1], PERIOD1)
 
 for t in range(1,12):
-    print(tof1.ping()-50, "mm")
+    print(tof1.ping()-50)
+    time.sleep(DELAY)
 
 tof2 = VL53L0X(i2c2)
 budget2 = tof2.measurement_timing_budget_us
 print("Budget2 was:", budget2)
-tof2.set_measurement_timing_budget(40000)
-tof2.set_Vcsel_pulse_period(tof2.vcsel_period_type[0], 18)
-tof2.set_Vcsel_pulse_period(tof2.vcsel_period_type[1], 14)
+tof2.set_measurement_timing_budget( TIMING )
+tof2.set_Vcsel_pulse_period(tof2.vcsel_period_type[0], PERIOD0)
+tof2.set_Vcsel_pulse_period(tof2.vcsel_period_type[1], PERIOD1)
 
 
 for t in range(1,12):
-    print(tof2.ping()-50, "mm")
+    print(tof2.ping()-50)
+    time.sleep(DELAY)
     
 tof3 = VL53L0X(i2c3)
 budget3 = tof3.measurement_timing_budget_us
 print("Budget3 was:", budget3)
-tof3.set_measurement_timing_budget(40000)
-tof3.set_Vcsel_pulse_period(tof3.vcsel_period_type[0], 18)
-tof3.set_Vcsel_pulse_period(tof3.vcsel_period_type[1], 14)
+tof3.set_measurement_timing_budget( TIMING )
+tof3.set_Vcsel_pulse_period(tof3.vcsel_period_type[0], PERIOD0)
+tof3.set_Vcsel_pulse_period(tof3.vcsel_period_type[1], PERIOD1)
     
 for t in range(1,12):
-    print(tof3.ping()-50, "mm")
+    print(tof3.ping()-50)
+    time.sleep(DELAY)
+    

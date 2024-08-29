@@ -9,17 +9,19 @@ https://github.com/uceeatz
 
 
 Files for the video:
-1. vl53l0x.py                (put on MCU's drive.)
-2. tof_test.py              (can be run from Thonny).
-3. scan_machine_I2c.py      My test program to verify I2C address.
-4. tof_test_3devices.py     Modified to report on three devices.
+1. vl53l0x.py                                   (put on MCU's drive.)
+2. tof_test.py                                  (can be run from Thonny).
+3. scan_machine_I2c.py                          My test program to verify I2C address.
+4. tof_test_3devices.py                         Modified to report on three devices.
 
 Test-data
-a.  TestOne-TOFData.xls         First test data and graphs
-b.  Data-3samples-raw.txt       as collected from Thonny terminal.
-c. TestTwo-Data-3samples.xls    Second test data and graphs.
+a.  TestOne-TOFData.xls                         First test data and graphs
+b.  Data-3samples-raw.txt                       as collected from Thonny terminal.
+c.  TestTwo-Data-3samples.xls                   Second test data and graphs.
+d.  TestThree-ColorAndSettingChanges.xls        Third set of test data.
 
-Video
+DataSheet
+1. vl53l0x.pdf                                  Datasheet on the device.
 
 link to be added soon.
 
