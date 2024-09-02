@@ -39,6 +39,20 @@ On a Linux computer:
 ### Build steps.
 >Note:To understand what's going on, study MicroPython.org's instructions to compile the code. [Link](https://GitHub.com/micropython/micropython).  
 
+First though if in Ubuntu perform these steps:
+```
+sudo apt update
+sudo apt upgrade
+```
+
+Then deploy the pre-requisites:
+```
+sudo apt-get install build-essential libffi-dev git pkg-config
+
+sudo apt-get install gcc-arm-none-eabi libnewlib-arm-none-eabi
+```
+
+
 Follow the directions from WeAct Studios: [Link](https://GitHub.com/WeActStudio/WeAct_F411CE-MicroPython)  This includes the first step to get the basic MicroPython software from MicroPython org.  [Link](https://micropython.org/download/)
 
 WeAct Studios has you do these steps:
@@ -76,14 +90,34 @@ Edit the file mpconfigboard.h:
 
 By the way, the SPI_Flash area is correctly using A4, A5, A6, and A7.
 
+Finally there is one more file in the WeACt distribution to edit: bdev.c.
+There are two lines where a function begins with STATIC.  Replace each with the proper lowercase static.
+
+Use change directory to go up one level to "boards" directory.
+```
+cd ..
+```
+
+Once more to get to the "stm32" directory.
+```
+cd ..
+```
+
 Okay now, continue with the build:
 
 ```
 cd ..
 make BOARD=WeAct_F411CE CROSS_COMPILE=/mnt/e/MCU/tools/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi- -j
+```
 # or
+
+```
 make BOARD=WeAct_F411CE -j
 ```
+
+The make will inform you that it generated the firmware.  Look in the stm32 directory for a subfolder called "build-WeACt_F411CE".
+amonsgt the many files, are the files with the name firmware.   Copy the firmware.hex to your desktop computer with the ST Microelectronics program STM32Cube Programmer.
+
 
 ## Flashing MicroPython firmware to a BlackPill.
 You should register at the ST Microelectronics site and get their STM32Cube Programmer software (its free to registered users).
