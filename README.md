@@ -115,8 +115,8 @@ make BOARD=WeAct_F411CE CROSS_COMPILE=/mnt/e/MCU/tools/gcc-arm-none-eabi-8-2018-
 make BOARD=WeAct_F411CE -j
 ```
 
-The make will inform you that it generated the firmware.  Look in the stm32 directory for a subfolder called "build-WeACt_F411CE".
-amonsgt the many files, are the files with the name firmware.   Copy the firmware.hex to your desktop computer with the ST Microelectronics program STM32Cube Programmer.
+The make will inform you that it generated the firmware.  Look in the stm32 directory for a subfolder called "build-WeAct_F411CE",
+amongst the many files, are the files with the name "firmware".   Copy the "firmware.hex" to your desktop computer with the ST Microelectronics program called "STM32Cube Programmer".
 
 
 ## Flashing MicroPython firmware to a BlackPill.
