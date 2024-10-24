@@ -190,8 +190,8 @@ def receive(dat):
 
 ### Loop ##########################
 done = False
-#message = "hello"
-message = "he" + chr(END_BYTE) + "llo" + chr(ESC_BYTE)
+message = "hello"
+#message = "he" + chr(END_BYTE) + "llo" + chr(ESC_BYTE)
 reset()  
 try:
     print("----------------")
