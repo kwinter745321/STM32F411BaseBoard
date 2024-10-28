@@ -1,4 +1,4 @@
-# serial_loopback_test.py
+# desktop_serial_test1.py
 #
 # Copyright (C) 2024 KW Services.
 # MIT License
