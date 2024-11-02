@@ -5,7 +5,7 @@
 * Board: STM32F411CEU6 (BlackPill)
 * Copyright (C) 2024 KW Services.
 * MIT License
-* MicroPython 1.20
+* MicroPython 1.20 (v1.24-Preview After 2024-11-01)
 
 ## Scope.
 Jump start your project with the <B>STM32F411 Base Board</B>.  The board provides a patch-wire friendly (flexible) base for the low-cost WeAct Studios' BlackPill v3.1 USB Stick board. The BlackPill is not included, however this low-cost board is available from popular retailers.  The board includes common user interface devices and ports for external devices.  
