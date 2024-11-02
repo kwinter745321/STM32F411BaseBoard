@@ -1,6 +1,10 @@
-# test_ucobs_volts.py
-
-from ucobs_volts import cobs_encode,cobs_decode
+# test_encdec_mcobs_volts.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.20
+#
+from mcobs_volts import cobs_encode,cobs_decode
 
 def test1(msg):
     message = bytearray(len(msg))

@@ -1,6 +1,10 @@
-# cobs121.py
-
-from ucobs121 import encode,decode
+# test_encdec_mcobs121.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.20
+#
+from mcobs121 import encode,decode
 
 def test1(msg):
     message = bytearray(len(msg))

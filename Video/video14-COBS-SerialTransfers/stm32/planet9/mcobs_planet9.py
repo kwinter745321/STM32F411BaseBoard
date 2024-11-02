@@ -1,6 +1,11 @@
-# ucobs_planet9.py
-
+# mcobs_planet9.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.20
+#
 """
+File modified from the version at:
 https://forum.micropython.org/viewtopic.php?t=7803
 Serial binary data packets using COBS and uasyncio
 Post by Planet9 » Thu Feb 20, 2020 5:54 pm

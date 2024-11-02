@@ -1,5 +1,13 @@
+# mcobs121.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.20
+#
+
 """
-Consistent Overhead Byte Stuffing (COBS)
+File modified from the PYPI version by Craig McQueen
+Consistent Overhead Byte Stuffing (COBS) 1.2.1
 
 This version is for Python 3.x.
 """

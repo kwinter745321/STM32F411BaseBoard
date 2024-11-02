@@ -1,6 +1,10 @@
-# test_encdec_ucobs_planet9.py
+# test_encdec_mcobs_planet9.py
 #
-from ucobs_planet9 import cob_encode, cob_decode
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.20
+#
+from mcobs_planet9 import cob_encode, cob_decode
 
 def test1(msg):
 

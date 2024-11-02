@@ -1,7 +1,22 @@
-# ucobs_volts.py
+# mcobs_volts.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.20
+#
 from machine import Pin, UART
 import os
 import time
+
+'''
+
+File modified from the version at
+EEVblog: 
+https://www.eevblog.com/forum/microcontrollers/implementing-uart-data-packets-with-consistent-overhead-byte-stuffing-(cobs)/ 
+posted by voltsandjolts August 05, 2020
+
+'''
+
 
 #The term 'message' is generally used to mean the plaintext message
 #The term 'frame' refers to the on-the-wire format, COBS encoded with zero byte delimiters
