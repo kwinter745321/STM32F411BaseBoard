@@ -21,18 +21,18 @@ Desktop driver files should be in the same directory as the test program.
 
 | Platform  |  STM32   |  Desktop   | Source (see Endnote) |
 | --------- | -------- | ---------- | ------ |
-| cobs 1.2.1 |  ucobs121.py | cobs121.py  | (4),(5) |
-| voltsandjolts | ucobs_volts.py | cobs_volts.py | (6) |
-| planet9 | ucobs_planet9.py   | cobs_planet9.py   | (3) |
+| cobs 1.2.1 |  mcobs121.py | cobs121.py  | (4),(5) |
+| voltsandjolts | mcobs_volts.py | cobs_volts.py | (6) |
+| planet9 | mcobs_planet9.py   | cobs_planet9.py   | (3) |
 
 ## Programs to Test Encode and Decode Functions
 These files test the COBS encode/decode functions of the drivers.
 
 | Platform  |  STM32   |  Desktop   |
 | --------- | -------- | ---------- |
-| cobs 1.2.1 |  test_encdec_ucobs121.py | test_encdec_cobs121.py  |
-| voltsandjolts | test_encdec_ucobs_volts.py | test_encdec_cobs_volts.py |
-| planet9 | test_encdec_ucobs_planet9.py   | test_encdec_cobs_planet9.py   |
+| cobs 1.2.1 |  test_encdec_mcobs121.py | test_encdec_cobs121.py  |
+| voltsandjolts | test_encdec_mcobs_volts.py | test_encdec_cobs_volts.py |
+| planet9 | test_encdec_mcobs_planet9.py   | test_encdec_cobs_planet9.py   |
 
 ## Programs to Test Send/Get Functions
 Each program has both send and receive functions.  So, the programs can be individually tested using 'loopback' as described in Videos 13A/B.  Otherwise, the Bluetooth Module can be inserted into the STM32 Base Board and the programs
@@ -41,8 +41,8 @@ will operate wirelessly.
 | Platform  |  STM32   |  Desktop   |
 | --------- | -------- | ---------- |
 | cobs 1.2.1 |  x | x  |
-| voltsandjolts | test_ucobs_volts.py | test_cobs_volts.py |
-| planet9 | test_ucobs_planet9.py   | test_cobs_planet9.py   |
+| voltsandjolts | test_mcobs_volts.py | test_cobs_volts.py |
+| planet9 | test_mcobs_planet9.py   | test_cobs_planet9.py   |
 | planet9 async| test_uasyncio_planet9.py   | y  |
 
 - Note x: no send/get function   
