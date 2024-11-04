@@ -19,8 +19,8 @@ Python code versions used in the testing:
 The Desktop used the Python 3.9 and the STM32 used the MicroPython 1.24.  The repo contains the following files:
 
 ## Driver files (used by test programs)
-The STM32 driver files must reside on the /flash directory.  The
-Desktop driver files should be in the same directory as the test program.
+The Desktop driver files should be in the same directory as the test program.
+The STM32 driver files must reside on the /flash directory.  Note:  the filenames were changed from what is shown on the video.  (For example: ucobs121.py was named mcobs121.py) I did this as learned MicroPython is moving away from the "u" prefix naming.
 
 | Platform  |  STM32   |  Desktop   | Source (see Endnote) |
 | --------- | -------- | ---------- | ------ |
