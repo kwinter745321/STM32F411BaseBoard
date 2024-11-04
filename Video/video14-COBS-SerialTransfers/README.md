@@ -10,10 +10,13 @@ Encode/Decode programs were used to ensure the driver produced the data results 
 Python code versions used in the testing:
 - Python 3.9.20 (main, Oct  3 2024, 07:38:01) [MSC v.1929 64 bit (AMD64)] on win32
 - pyserial 3.5
-- keyboard 0.13.5
+- keyboard 0.13.5 
 - MicroPython v1.20.0-326-gcfcce4b53 on 2023-07-26; WeAct Studio Core with STM32F411CE
+- MicroPython v1.24.0-preview.276.g1897fe622 on 2024-09-02; WeAct Studio Core with STM32F411CE
 
-The Desktop used the Python 3.9 and the STM32 used the MicroPython 1.20.  The repo contains the following files:
+** Developed and tested on 1.20.0, but then upgraded the STM32 to 1.24.  So all files were retested on MP 1.24.
+
+The Desktop used the Python 3.9 and the STM32 used the MicroPython 1.24.  The repo contains the following files:
 
 ## Driver files (used by test programs)
 The STM32 driver files must reside on the /flash directory.  The
