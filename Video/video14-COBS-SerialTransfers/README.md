@@ -24,6 +24,7 @@ Desktop driver files should be in the same directory as the test program.
 | cobs 1.2.1 |  mcobs121.py | cobs121.py  | (4),(5) |
 | voltsandjolts | mcobs_volts.py | cobs_volts.py | (6) |
 | planet9 | mcobs_planet9.py   | cobs_planet9.py   | (3) |
+| planet9-asyncio | uasyncio_cobs_planet9.py | -- | (3) |
 
 ## Programs to Test Encode and Decode Functions
 These files test the COBS encode/decode functions of the drivers.
@@ -45,8 +46,9 @@ will operate wirelessly.
 | planet9 | test_mcobs_planet9.py   | test_cobs_planet9.py   |
 | planet9 async| test_uasyncio_planet9.py   | y  |
 
+
 - Note x: no send/get function   
-- Note y: only asyncio for STM32 
+- Note y: only asyncio for STM32. Use test_cobs_planet9.py or test_cobs_volts.py to test it
 
 
 ## Acknowledgement Endnotes
