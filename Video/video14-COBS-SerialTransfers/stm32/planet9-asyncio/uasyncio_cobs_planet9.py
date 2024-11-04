@@ -1,4 +1,9 @@
-# mp_asyncio_cobs.py
+# uasyncio_cobs_planet9.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.24
+#
 
 """
 https://forum.micropython.org/viewtopic.php?t=7803
