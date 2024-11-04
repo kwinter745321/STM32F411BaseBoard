@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2024 KW Services.
 # MIT License
-# MicroPython 1.20
+# MicroPython 1.24
 #
 from machine import Pin, UART
 import os
@@ -16,7 +16,6 @@ https://www.eevblog.com/forum/microcontrollers/implementing-uart-data-packets-wi
 posted by voltsandjolts August 05, 2020
 
 '''
-
 
 #The term 'message' is generally used to mean the plaintext message
 #The term 'frame' refers to the on-the-wire format, COBS encoded with zero byte delimiters

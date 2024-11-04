@@ -30,9 +30,9 @@ These files test the COBS encode/decode functions of the drivers.
 
 | Platform  |  STM32   |  Desktop   |
 | --------- | -------- | ---------- |
-| cobs 1.2.1 |  test_encdec_mcobs121.py | test_encdec_cobs121.py  |
-| voltsandjolts | test_encdec_mcobs_volts.py | test_encdec_cobs_volts.py |
-| planet9 | test_encdec_mcobs_planet9.py   | test_encdec_cobs_planet9.py   |
+| cobs 1.2.1 |  test_encdec_ucobs121.py | test_encdec_cobs121.py  |
+| voltsandjolts | test_encdec_ucobs_volts.py | test_encdec_cobs_volts.py |
+| planet9 | test_encdec_ucobs_planet9.py   | test_encdec_cobs_planet9.py   |
 
 ## Programs to Test Send/Get Functions
 Each program has both send and receive functions.  So, the programs can be individually tested using 'loopback' as described in Videos 13A/B.  Otherwise, the Bluetooth Module can be inserted into the STM32 Base Board and the programs

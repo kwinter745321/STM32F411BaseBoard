@@ -1,4 +1,9 @@
-
+# test_encdec_cobs_planet9.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# Python 3.9
+#
 from cobs_planet9 import cob_encode, cob_decode
 
 def test1(msg):

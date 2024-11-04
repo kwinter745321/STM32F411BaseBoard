@@ -1,3 +1,10 @@
+# cobs121.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# Python 3.9
+#
+
 """
 Consistent Overhead Byte Stuffing (COBS)
 

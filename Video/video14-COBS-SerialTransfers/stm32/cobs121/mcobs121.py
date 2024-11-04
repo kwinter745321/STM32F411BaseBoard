@@ -1,13 +1,11 @@
-# mcobs121.py
 #
 # Copyright (C) 2024 KW Services.
 # MIT License
-# MicroPython 1.20
+# MicroPython 1.24
 #
-
 """
-File modified from the PYPI version by Craig McQueen
-Consistent Overhead Byte Stuffing (COBS) 1.2.1
+File modified from the PYPI 1.2.1 version by Craig McQueen
+Consistent Overhead Byte Stuffing (COBS)
 
 This version is for Python 3.x.
 """
@@ -103,3 +101,4 @@ def decode(in_bytes):
             else:
                 break
     return bytes(out_bytes)
+

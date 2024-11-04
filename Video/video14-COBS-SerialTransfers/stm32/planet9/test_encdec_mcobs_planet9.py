@@ -1,8 +1,8 @@
-# test_encdec_mcobs_planet9.py
+# test_encdec_mp_cobs_planet9.py
 #
 # Copyright (C) 2024 KW Services.
 # MIT License
-# MicroPython 1.20
+# MicroPython 1.24
 #
 from mcobs_planet9 import cob_encode, cob_decode
 

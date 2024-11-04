@@ -1,20 +1,29 @@
-# cobs121.py
+# test_encdec_cobs121.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# Python 3.9
+#
 
 from cobs121 import encode,decode
 
 def test1(msg):
     message = bytearray(len(msg))
+    
     for i,c in enumerate(msg):
         message[i] = c
     encoded = encode(message)
     decoded = decode(encoded)
+    
     print("--------")
+    
     print("Msg:", end="")
     for c in msg:
         print("%02x " % c, end="")
     print("\nEnc:", end="")
     for c in encoded:
         print("%02x " % c, end="")
+        
     print("\nDec:", end="")
     for c in decoded:
         print("%02x " % c, end="")

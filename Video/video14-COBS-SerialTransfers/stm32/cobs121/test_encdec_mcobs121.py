@@ -1,8 +1,8 @@
-# test_encdec_mcobs121.py
+# mcobs121.py
 #
 # Copyright (C) 2024 KW Services.
 # MIT License
-# MicroPython 1.20
+# MicroPython 1.24
 #
 from mcobs121 import encode,decode
 

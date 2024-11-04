@@ -1,16 +1,19 @@
-# desktop_uasyncio_cobs.py
-
+# cobs_planet9.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# Python 3.9
+#
 """
+File modified from the version at:
 https://forum.micropython.org/viewtopic.php?t=7803
 Serial binary data packets using COBS and uasyncio
 Post by Planet9 » Thu Feb 20, 2020 5:54 pm
 """
-
 import serial,os
 from time import sleep
 from random import randint
 from datetime import datetime,timedelta
-
 
 def ms_since(start_time):
     '''
@@ -23,7 +26,6 @@ def ms_since(start_time):
     ms = (dt.days * 24 * 60 * 60 + dt.seconds) * 1000 + dt.microseconds / 1000.0
     return ms
 
-
 def crc16_ccitt_bytes(crc:int, data:bytes):
     x:int=0
     for i in range(len(data)):
@@ -32,7 +34,6 @@ def crc16_ccitt_bytes(crc:int, data:bytes):
         crc = (crc << 8) ^ (x << 12) ^ (x << 5) ^ x
         crc = crc & 0xffff
     return crc
-
 
 def cob_encode(msg):
     '''
@@ -62,8 +63,6 @@ def cob_encode(msg):
     frame[code_idx] = code  #FinishBlock
     return frame[0:i]
 
-
-
 def cob_decode(frame):
     '''
     COBS decoder/unstuffer
@@ -74,7 +73,7 @@ def cob_decode(frame):
     i=0
     size = len(frame)
     try:
-        print("cob_decode",frame)
+        #print("cob_decode",frame)
         while i < len(frame):
             code = frame[i]
             i += 1
@@ -110,27 +109,6 @@ def frame_is_valid(frm):
     #print("Received CRC and calculated value: ", csum, calc)
     return True
 
-def test_cobs_python_methods(iterations, verbose=False):
-    '''
-    Loopback test through COBS encoder and decoder
-    '''
-    for n in range(iterations):
-        msg = bytes(os.urandom(randint(5,1000)))
-        data_enc = cob_encode(msg)
-        data_dec = cob_decode(data_enc)
-        if verbose:
-            print("Test ", n, ":")
-            print("msg:", msg.hex())
-            print("enc:", data_enc.hex())
-            print("dec:", data_dec.hex())
-        if data_dec != msg:
-            print("FAIL")
-            print(msg.hex())
-            print("enc:", data_enc.hex())
-            print("dec:", data_dec.hex())
-            return
-    print("Done")
-
 '''
 Methods which access the serial port
 '''
@@ -145,21 +123,20 @@ def get_frame(serialport, timeout_ms):
     while ms_since(start_time) < timeout_ms:
         sleep(0.010)
         n = serialport.inWaiting()
-        if n > 0:
-            print("Read:",end="")
+        #if n > 0:
+            #print("Read:",end="")
         for i in range(n):
             c = serialport.read(1)
             if len(c) != 0:
                 if c[0] == 0:
                     if len(frame) > 0:
                         timeout = False
-                        print()
+                        #print()
                         return [frame, timeout]
                 else:
                     frame.append(c[0])
-                    print(" ",c,end="")
+                    #print(" ",c,end="")
     timeout = True
-
     return [frame, timeout]
 
 
@@ -179,20 +156,22 @@ def send_msg(serialport, msg, verbose=False):
     
     menc = cob_encode(m)
     if verbose:
-        print("len:", length, "bytes, csum:", hex(csum))
-        print("msg:", msg.hex())
-        print("menc:", menc.hex())
+        print("***Send: msg:", msg.hex())
+        print("         len:", len(menc), "bytes, csum:", hex(csum))
+        print("         menc:", menc.hex())
     serialport.write([0])  # Frame delim character
     serialport.write(menc) # No 0x00 bytes in here
     serialport.write([0])  # Frame delim character
     #sleep(0.1)
-
 
 def get_msg(serialport, timeout_ms, verbose=False):
     '''
     Get a frame, verify checksum
     '''
     [frame, timeout] = get_frame(serialport, timeout_ms)
+    if verbose and frame != b'':
+        print("***Recv: len:", len(frame), "bytes, csum:", frame[-2:])
+        print("         menc:", frame.hex())
     if len(frame) < 5 or timeout:
         return bytearray()
     fd = cob_decode(frame)
@@ -205,53 +184,9 @@ def get_msg(serialport, timeout_ms, verbose=False):
     return fd[0:-2]
 
 
-
-
-
-# def test_cobs_loopback(serialport):
-#     '''
-#     Loopback test through microcontroller which should be programmed
-#     to echo messages
-#     '''
-#     bytecnt = 0
-#     start_time = datetime.now()
-#     for n in range(50):
-#         print("Test",n)
-#         #msg = bytearray.fromhex('8501bebd000b131ac4163d93721a5b3176')
-#         msg = os.urandom(randint(1022,1024))
-#         print(len(msg))
-#         #msg = os.urandom(10)
-#         bytecnt += len(msg)
-#         send_msg(serialport,msg)
-#         [rcv, timeout] = get_frame(serialport, 1000)
-#         if len(rcv) == 0:
-#             print ("No response")
-#             return
-#         if len(rcv) < 3 or timeout:
-#             print ("Bad response length = ",len(rcv))
-#             return
-
-#         resp = rcv
-#         #print("Rx Msg:")
-#         #print (resp.hex().upper())
-#         #print("Rx Msg Decoded:")
-#         data_dec = cob_decode(resp)
-#         #print (data_dec.hex().upper())
-#         if frame_is_valid(data_dec) == False:
-#             print("FAIL")
-#             print("msg: ",msg.hex())
-#             print("rcv: ",rcv.hex())
-#             print("rsp: ",data_dec.hex())
-#             return
-#     print("Success: ", bytecnt, "bytes echoed in", int( 10*ms_since(start_time)/1000 )/10.0, "secs")
-
-
-
-
 '''
 -----------------   Allow execution as a program or as a module  -----------------------
 '''
-
 if __name__ == '__main__':
     print("COBS Loopback Test")
     ser = serial.Serial(port='COM5', baudrate=38400, bytesize=8, parity='N', stopbits=1,timeout=1, xonxoff=False, rtscts=0, dsrdtr=False)
@@ -282,8 +217,4 @@ if __name__ == '__main__':
         print("Good: ",total-bad," Bad: ",bad,"\n")
     ser.close()
 
-
-
 __all__ = ["send_msg", "get_msg"]
-
-

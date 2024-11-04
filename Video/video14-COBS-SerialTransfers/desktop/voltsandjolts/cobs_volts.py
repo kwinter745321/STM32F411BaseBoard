@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
+
+# cobs_volts.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# MicroPython 1.24
+#
+
 import serial,os,time,serial
 from random import randint
 
-#The term 'message' is generally used to mean the plaintext message
-#The term 'frame' refers to the on-the-wire format, COBS encoded with zero byte delimiters
-
-#comport = 'COM4'  configured for loopback
-
+'''
+File modified from the version at
+EEVblog: 
+https://www.eevblog.com/forum/microcontrollers/implementing-uart-data-packets-with-consistent-overhead-byte-stuffing-(cobs)/ 
+posted by voltsandjolts August 05, 2020
+'''
 
 def cobs_encode(message):
     '''
@@ -36,7 +45,6 @@ def cobs_encode(message):
     frame[code_idx] = code  #FinishBlock
     return frame[0:i]
 
-
 def cobs_decode(frame):
     '''
     COBS decoder/unstuffer
@@ -65,7 +73,6 @@ def crc16_ccitt(crc:int, data:bytes) -> int:
         crc = crc & 0x0ffff
     return crc
 
-
 def cob_make_frame(msg):
     '''
     msg is the bytearray message we want to send.
@@ -82,9 +89,11 @@ def cob_make_frame(msg):
     if 0 in enc_msg:
         raise ArithmeticError #COBS encoded message should not have any zeros in it
     frame = bytearray(len(enc_msg)+2) #Add leading and trailing zero to make frame
+    #
+    # print("*** COBS encoded Frame  (to be sent):",enc_msg)
+    #
     frame[1:-1] = memoryview(enc_msg)
     return frame
-
 
 def get_frame(serialport, timeout_sec):
     '''
@@ -112,7 +121,11 @@ def get_frame(serialport, timeout_sec):
 
 
 def get_msg(serialport, timeout_ms):
-    [frame, timeout] = get_frame(serialport, timeout_ms)
+    [frame, timeout] = get_frame(serialport, timeout_ms)\
+    #
+    # if frame != b'':
+    #     print("*** COBS encoded Frame (as received):",frame)
+    #
     if len(frame) < 4 or timeout:
         return bytearray() #Invalid frame
     msg = cobs_decode(frame)
@@ -121,12 +134,9 @@ def get_msg(serialport, timeout_ms):
         return bytearray() #Invalid message
     return msg[0:-2]
 
-
 def send_msg(serialport, msg):
     frame=cob_make_frame(msg)
     serialport.write(frame)
-
-
 
 #-----------------   Allow execution as a program or as a module  -----------------------
 if __name__ == '__main__':

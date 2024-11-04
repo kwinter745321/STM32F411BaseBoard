@@ -1,5 +1,9 @@
-# cobs121.py
-
+# test_encdec_cobs_volts.py
+#
+# Copyright (C) 2024 KW Services.
+# MIT License
+# Python 3.9
+#
 from cobs_volts import cobs_encode,cobs_decode
 
 def test1(msg):

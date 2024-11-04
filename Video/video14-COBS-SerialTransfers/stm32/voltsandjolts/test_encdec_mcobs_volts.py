@@ -1,8 +1,8 @@
-# test_encdec_mcobs_volts.py
+# test_ucobs_volts.py
 #
 # Copyright (C) 2024 KW Services.
 # MIT License
-# MicroPython 1.20
+# MicroPython 1.24
 #
 from mcobs_volts import cobs_encode,cobs_decode
 
