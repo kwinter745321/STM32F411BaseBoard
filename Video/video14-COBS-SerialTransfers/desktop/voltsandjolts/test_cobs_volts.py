@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2024 KW Services.
 # MIT License
-# MicroPython 1.24
+# Python 3.9
 #
 import serial
 import os
