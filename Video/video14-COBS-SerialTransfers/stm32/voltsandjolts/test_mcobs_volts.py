@@ -33,46 +33,46 @@ uart.init( UART_SPEED, bits=8, parity=None, stop=1,timeout=50 )
 ### Main Loop ##############
 if __name__ == '__main__':
 
-#try:
-    done = False
-    print("Volts UCOBS Test from STM32")
-    print("Starts waiting for data. Press User button to send message.")
-    print("Press Control-c key to quit.")
-    print("Hold the button for 1-2 secs to send.")
-    while not done:
-        user_btn = user.value()
-        user2_btn = user2.value()
-        user3_btn = user3.value()
-        #print(user3_btn)
-        
-        data = get_msg(uart, 1)
-        if data != b'':
-            print("Received:",data)
-                    
-        if user_btn == 0:
-            time.sleep_ms(50)
-            msgtx = b"hello"
-            print("Sending message: ",msgtx)
-            send_msg(uart, msgtx)
+    try:
+        done = False
+        print("Volts UCOBS Test from STM32")
+        print("Starts waiting for data. Press User button to send message.")
+        print("Press Control-c key to quit.")
+        print("Hold the button for 1-2 secs to send.")
+        while not done:
+            user_btn = user.value()
+            user2_btn = user2.value()
+            user3_btn = user3.value()
+            #print(user3_btn)
             
-        if user2_btn == 0:
-            time.sleep_ms(50)
-            #msgtx = bytearray.fromhex('0102030405060708090A0B0C0D0E0F')
-            msgtx = bytearray.fromhex('0102030405')
-            print("Sending message: ",msgtx)
-            uart.write(msgtx)
-            
-                    
-        if user3_btn == 0:
-            time.sleep_ms(50)
-            #msgtx = bytearray.fromhex('0102030405060708090A0B0C0D0E0F')
-            msgtx = bytearray.fromhex('0011121100')
-            print("Sending message: ",msgtx)
-            uart.write(msgtx)
+            data = get_msg(uart, 1)
+            if data != b'':
+                print("Received:",data)
+                        
+            if user_btn == 0:
+                time.sleep_ms(50)
+                msgtx = b"hello"
+                print("Sending message: ",msgtx)
+                send_msg(uart, msgtx)
                 
-        time.sleep_ms(50)
+            if user2_btn == 0:
+                time.sleep_ms(50)
+                #msgtx = bytearray.fromhex('0102030405060708090A0B0C0D0E0F')
+                msgtx = bytearray.fromhex('0102030405')
+                print("Sending message: ",msgtx)
+                uart.write(msgtx)
+                
+                        
+            if user3_btn == 0:
+                time.sleep_ms(50)
+                #msgtx = bytearray.fromhex('0102030405060708090A0B0C0D0E0F')
+                msgtx = bytearray.fromhex('0011121100')
+                print("Sending message: ",msgtx)
+                uart.write(msgtx)
+                    
+            time.sleep_ms(50)
 
-#except:
-    print("Exception or Control-c pressed")
-#finally:
-    uart.deinit()
+    except:
+        print("Exception or Control-c pressed")
+    finally:
+        uart.deinit()
