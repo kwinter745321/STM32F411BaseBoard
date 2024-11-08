@@ -56,15 +56,18 @@ def cobs_decode(frame):
     if type(frame) != bytes and type(frame) != bytearray:
         raise TypeError('Need bytes or bytearray input')
     msg = bytearray()
+    ba = bytearray(1)
     i=0
     while i < len(frame):
         code = frame[i]
         i += 1
         for j in range(1,code):
-            msg.append(frame[i])
+            ba[0] = frame[i]
+            msg.extend(ba) 
             i += 1
         if code < 0xFF:
-            msg.append(0)
+            ba[0] = 0
+            msg.extend(ba)
     return msg[0:-1]
 
 
