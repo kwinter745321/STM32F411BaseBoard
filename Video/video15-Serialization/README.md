@@ -20,7 +20,7 @@ Serialization Technique |      STM32           |     Desktop              |
 |-----------------------|----------------------|--------------------------|
 | JSON                  | test_uart_json.py    | test_pyserial_json.py    |
 | Pickle                | test_uart_pickle.py  | test_pyserial_pickle.py  |
-| Struct                | test_uart_structpy   | test_pyserial_struct.py  |
+| Struct                | test_uart_struct.py   | test_pyserial_struct.py  |
 | MsgPack               | test_uart_msgpack.py | test_pyserial_msgpack.py |
 
 
