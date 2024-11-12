@@ -14,7 +14,7 @@ This set of objects, despite being simple, demonstrate several interesting situa
 There are four sets of files.  Each file can be run in loopback.
 Each file can send the message via a "button" and receive a message.
 Otherwise, the programs are concise to highlight the serialization. 
-The video demostrates them connected via a Bluetooth module on the STM32.
+The video demonstrates them connected via a Bluetooth module on the STM32.
 
 Serialization Technique |      STM32           |     Desktop              |
 |-----------------------|----------------------|--------------------------|
