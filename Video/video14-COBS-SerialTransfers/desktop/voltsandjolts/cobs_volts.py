@@ -57,7 +57,8 @@ def cobs_decode(frame):
         code = frame[i]
         i += 1
         for j in range(1,code):
-            msg.append(frame[i])
+            if j < len(frame):
+                msg.append(frame[i])
             i += 1
         if code < 0xFF:
             msg.append(0)
