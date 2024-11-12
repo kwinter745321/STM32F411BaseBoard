@@ -6,7 +6,7 @@ Serialization
 
 We test using this message: [ 'hello', 15, True, 1.414 ]
 
-This set of objects, despite being simple, demostrates several interesting situations.
+This set of objects, despite being simple, demonstrate several interesting situations.
 
 - STM32: MicroPython v1.24.0-preview.276.g1897fe622 on 2024-09-02; WeAct Studio w/STM32F411CE
 - Desktop: Conda Python 3.9.20 Oct 3, 2024
