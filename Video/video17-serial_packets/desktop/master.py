@@ -1,13 +1,5 @@
-# master.py
-#
-# Copyright (C) 2024 KW Services.
-# MIT License
-# Python 3.11
-#
-
-# based on master.py found at
-# https://github.com/zapta/serial_packets_py/tree/main/src/examples
-#
+# A sample program that sends serial_packets commands at endpoint 20.
+# To test with slave.py, use two serial points with crossed RX/TX.
 
 from __future__ import annotations
 
@@ -41,9 +33,10 @@ done = False
 
 async def command_async_callback(endpoint: int, data: PacketData) -> Tuple[int, PacketData]:
     logger.info(f"Received command: [%d] %s", endpoint, data.hex_str())
-    #################################################
-    #  The master.py on the Desktop is endpoint is 2
-    #################################################
+
+    ###########################
+    #  This endpoint is 2
+    ##########################
     if (endpoint == 2):
         print("RECV","="*56)
         print("-----Command Received. endpoint:",endpoint,"data:",data.read_bytes(7))
@@ -107,7 +100,7 @@ async def async_main():
             cmd_data = PacketData().add_bytes(hello)
             logger.info("Sending command: [%d], %s", endpoint, cmd_data.hex_str())
             print("SEND","="*56)
-            status, response_data = await client.send_command_blocking(endpoint, cmd_data, timeout=0.2)
+            status, response_data = await client.send_command_blocking(endpoint, cmd_data, timeout=1)
             print("="*60)
             logger.info(f"Command result: [%d], %s", status, response_data.hex_str())
             print("Remote Response:",response_data.read_bytes(3))
