@@ -1,31 +1,55 @@
 # README.md - serial_packets
 
-December 08, 2024
+December 17, 2024
 
+Serial-packets implements a simple Serial Transmission Protocol for Commands, Messages, and Logs.
 
-# Serial-Packets Endpoints
-Desktop is endpoint 2   (Windows bluetooth on desktop)
-stm32 is enspoint 11    (UART connected to classic bluetooth-uart module)
+The example "master.py" provided by the author of serial-packets only sends Commands to the slave Endpoint 20.
+Since I was migrating serial-packets to MicroPython, I expanded his "master.py" example.  I liked how simple the serial-packets library made coding the master.py file.  So the MicroPython driver attempts to do the same.
 
+Desktop
+- Uses the serial-packets installed on a Python 3.11 environment.
+- The master.py was enhanced to demonstrate two-way Commands/Responses and Messages.   
+    - Pressing keyboard 'c' sends Commands to Endpoint 11.
+    - Pressing keyboard 'm' sends Messages to Endpoint 11.
+
+STM32
+- Contains a MicroPython driver with the ability to send/receive commands and messages.
+- Test program using pushbuttons and UART. 
+    - Button 1 sends commands to Endpoint 2 and receives a response.
+    - Button 2 sends a message to Endpoint 2.
 
 # Files in video 17
  
 |                            |                                                                                  |
 | ---------------------------| -------------------------------------------------------------------------------- |
 | Desktop                    |                                                                                  |
-|1. master.py                |    This is the desktop endpoint #2 program that uses the serial-packets utility. |
-|2. pip install serial-packets    | utility |
-|3. pip install pyserial          | serial |
-|4. pip install pyserial-asyncio  | serial asyncio  |
-|5.  pycrc                        |  PyCRC should be installed by serial-packets otherwise pip install pycrc   |
-|                            |                                                                                  |
+|1. pip install pyserial          | serial |
+|2. pip install pyserial-asyncio  | serial asyncio  |
+|3. pip install serial-packets    | utility |
+|4. (copy) master.py              | Test program modified to fit our test data. |
+|                            |                                                                 
 | STM32                      |                                                                                  |
 |1. serial_packets.py        |   put this file on the flash of the STM32                                        |
-|2. test_serial_packets.py   |   File can be run on Thonny.                                                     |
+|2. test_serial_packets.py   |   File can be run on Thonny.  
+|4. test_crcccitt.py         | An early program to verify the CRC16 checksum. |                                                   |
 |                            |                                                                                  |
 
+- Note: serial-packets package will install the PYPI package called "pycrc" which it uses to calculate CRC16 checksum.
 
 
+# Test Data
+
+
+- Desktop is endpoint 2   (Windows bluetooth on desktop)
+- STM32 is endpoint 11    (UART connected to classic bluetooth-uart module)
+
+We used the following test data:
+
+- Integer: 15
+- Boolean:  True 
+- Float:   1.414
+- String:  hello
 
 
 # CRC16 Algorithm 
