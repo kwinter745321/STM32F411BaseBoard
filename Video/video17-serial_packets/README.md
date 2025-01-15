@@ -34,6 +34,7 @@ STM32
 |1. serial_packets.py        |   put this file on the flash of the STM32                                        |
 |2. test_serial_packets.py   |   File can be run on Thonny.  
 |4. test_crcccitt.py         | An early program to verify the CRC16 checksum. |                                                   |
+|5. enum.py                  |  enum.py is required on the STM32 /flash directory. |
 |                            |                                                                                  |
 
 - Note: serial-packets package will install the PYPI package called "pycrc" which it uses to calculate CRC16 checksum.
