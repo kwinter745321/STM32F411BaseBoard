@@ -28,6 +28,7 @@ STM32
 |2. pip install pyserial-asyncio  | serial asyncio  |
 |3. pip install serial-packets    | utility |
 |4. (copy) master.py              | Test program modified to fit our test data. |
+|5. pip install keyboard          | utility for keyboard commands. |
 |                            |                                                                 
 | STM32                      |                                                                                  |
 |1. serial_packets.py        |   put this file on the flash of the STM32                                        |
